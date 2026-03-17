@@ -18,34 +18,34 @@ const projects: Project[] = [
     description:
       "An AI-based circular waste management system that classifies waste using machine learning and suggests eco-friendly disposal methods. Features real-time image recognition and a user-friendly dashboard for tracking waste habits.",
     tech: ["React", "Node.js", "TensorFlow", "MongoDB", "Express"],
-    github: "https://github.com/mansimehra/binwise",
-    live: "#",
+    github: "https://github.com/mansi2004mehra18/BinWise-pn",
+    live: "https://v0-binwise.vercel.app/",
     featured: true,
   },
+  // {
+  //   title: "Task Manager App",
+  //   description:
+  //     "A full-featured task management application built with the MERN stack. Includes user authentication, CRUD operations, task categorization, priority levels, and a clean responsive interface.",
+  //   tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+  //   github: "https://github.com/mansimehra/task-manager",
+  //   live: "#",
+  //   featured: true,
+  // },
+  // {
+  //   title: "GitHub Clone",
+  //   description:
+  //     "A functional clone of GitHub's core UI and features including repository browsing, user profiles, search functionality, and a responsive layout mimicking the original GitHub experience.",
+  //   tech: ["React", "GitHub API", "Tailwind CSS", "Node.js"],
+  //   github: "https://github.com/mansimehra/github-clone",
+  //   live: "#",
+  //   featured: true,
+  // },
   {
-    title: "Task Manager App",
-    description:
-      "A full-featured task management application built with the MERN stack. Includes user authentication, CRUD operations, task categorization, priority levels, and a clean responsive interface.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/mansimehra/task-manager",
-    live: "#",
-    featured: true,
-  },
-  {
-    title: "GitHub Clone",
-    description:
-      "A functional clone of GitHub's core UI and features including repository browsing, user profiles, search functionality, and a responsive layout mimicking the original GitHub experience.",
-    tech: ["React", "GitHub API", "Tailwind CSS", "Node.js"],
-    github: "https://github.com/mansimehra/github-clone",
-    live: "#",
-    featured: true,
-  },
-  {
-    title: "Zerodha Clone",
+    title: "Stock Trading Platform",
     description:
       "A pixel-perfect clone of Zerodha's trading platform interface. Features include a responsive landing page, pricing section, dashboard mockup, and smooth navigation across multiple pages.",
     tech: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
-    github: "https://github.com/mansimehra/zerodha-clone",
+    github: "https://github.com/mansi2004mehra18/StockTradingPlatform",
     live: "#",
     featured: false,
   },

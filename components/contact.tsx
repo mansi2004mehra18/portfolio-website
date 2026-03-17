@@ -35,7 +35,7 @@ export function Contact() {
           to get back to you!
         </p>
         <a
-          href="mailto:mansi@example.com"
+          href="mailto:mansi2004mehra18@gmail.com"
           className="inline-flex items-center gap-2 rounded-lg border border-primary px-8 py-3 font-mono text-sm text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:scale-105"
         >
           <Mail size={18} />
@@ -44,7 +44,7 @@ export function Contact() {
 
         <div className="mt-16 flex items-center justify-center gap-6">
           <a
-            href="https://github.com/mansimehra"
+            href="https://github.com/mansi2004mehra18"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
@@ -53,7 +53,7 @@ export function Contact() {
             <Github size={22} />
           </a>
           <a
-            href="https://linkedin.com/in/mansimehra"
+            href="https://www.linkedin.com/in/mansi-mehra-65325738a/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
@@ -62,7 +62,7 @@ export function Contact() {
             <Linkedin size={22} />
           </a>
           <a
-            href="mailto:mansi@example.com"
+            href="mailto:mansi2004mehra18@gmail.com"
             className="text-muted-foreground transition-colors hover:text-primary"
             aria-label="Email"
           >
