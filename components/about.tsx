@@ -6,18 +6,18 @@ import { Code2, Cpu, Globe } from "lucide-react"
 const highlights = [
   {
     icon: Code2,
-    title: "Full Stack",
-    description: "End-to-end development with the MERN stack and modern frameworks.",
+    title: "Full Stack Development",
+    description: "Building complete web applications using modern technologies and best practices.",
   },
   {
     icon: Cpu,
-    title: "AI Integration",
-    description: "Building intelligent features with AI/ML into real-world applications.",
+    title: "AI Exploration",
+    description: "Learning and applying AI concepts to enhance real-world applications.",
   },
   {
     icon: Globe,
-    title: "Web Performance",
-    description: "Crafting fast, accessible, and responsive web experiences.",
+    title: "Practical Projects",
+    description: "Focused on solving real problems through scalable and meaningful projects.",
   },
 ]
 
@@ -54,20 +54,21 @@ export function About() {
         <div className="mt-10 grid gap-12 md:grid-cols-2">
           <div className="space-y-5">
             <p className="text-base leading-relaxed text-muted-foreground">
-              {"I'm a Full Stack Developer with a passion for creating clean, efficient, and user-friendly web applications. My journey in tech started with curiosity about how things work on the internet, and it has evolved into a career building solutions that make a real impact."}
+              I'm a developer who focuses on building real-world applications, not just following tutorials.
+              Currently in my engineering journey, I’ve been actively working on full-stack projects to strengthen my problem-solving and development skills.
             </p>
+
             <p className="text-base leading-relaxed text-muted-foreground">
-              I specialize in the{" "}
-              <span className="text-primary">MERN stack</span> (MongoDB,
-              Express, React, Node.js) and have hands-on experience integrating{" "}
-              <span className="text-primary">AI solutions</span> into web
-              applications. I love turning complex problems into simple,
-              beautiful, and intuitive designs.
+              I primarily work with the{" "}
+              <span className="text-primary">MERN stack</span> (MongoDB, Express, React, Node.js)
+              and have started exploring{" "}
+              <span className="text-primary">AI integration</span> to make applications smarter and more practical.
+              My focus is on writing clean code, understanding systems deeply, and building projects that actually solve problems.
             </p>
+
             <p className="text-base leading-relaxed text-muted-foreground">
-              When {"I'm"} not coding, you can find me exploring new technologies,
-              contributing to open source, or learning about the latest
-              advancements in artificial intelligence.
+              Right now, I'm focused on improving my development skills, building strong projects,
+              and preparing for software engineering internships. I enjoy learning by building and continuously pushing myself beyond basics.
             </p>
           </div>
 
@@ -75,11 +76,10 @@ export function About() {
             {highlights.map((item, i) => (
               <div
                 key={item.title}
-                className={`group rounded-xl border border-border bg-card p-5 transition-all duration-500 hover:border-primary/50 ${
-                  isVisible
+                className={`group rounded-xl border border-border bg-card p-5 transition-all duration-500 hover:border-primary/50 ${isVisible
                     ? "translate-y-0 opacity-100"
                     : "translate-y-8 opacity-0"
-                }`}
+                  }`}
                 style={{ transitionDelay: `${(i + 1) * 150}ms` }}
               >
                 <div className="mb-3 flex items-center gap-3">

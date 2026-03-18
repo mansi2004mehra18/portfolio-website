@@ -14,23 +14,35 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "BinWise - AI Waste Management",
+    title: "BinWise - AI Waste Management System",
     description:
-      "An AI-based circular waste management system that classifies waste using machine learning and suggests eco-friendly disposal methods. Features real-time image recognition and a user-friendly dashboard for tracking waste habits.",
-    tech: ["React", "Node.js", "TensorFlow", "MongoDB", "Express"],
+      "Developing an AI-powered waste classification system that identifies waste types using image input and suggests eco-friendly disposal methods. Currently implemented core UI, backend structure, and initial ML integration, with ongoing work on improving model accuracy and real-time processing.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "TensorFlow"],
     github: "https://github.com/mansi2004mehra18/BinWise-pn",
     live: "https://v0-binwise.vercel.app/",
     featured: true,
   },
-  // {
-  //   title: "Task Manager App",
-  //   description:
-  //     "A full-featured task management application built with the MERN stack. Includes user authentication, CRUD operations, task categorization, priority levels, and a clean responsive interface.",
-  //   tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-  //   github: "https://github.com/mansimehra/task-manager",
-  //   live: "#",
-  //   featured: true,
-  // },
+
+  {
+    title: "Impetus 9.0 Website Features",
+    description:
+      "Contributed to the development of multiple production-ready UI components including sponsor section, team (IAM) page, and about page. Built a draggable notification banner positioned at the bottom-right, improving user interaction by enabling quick navigation to alerts.",
+    tech: ["React", "Next.js", "Tailwind CSS"],
+    github: "https://github.com/mansi2004mehra18/impetus9.0",
+    live: "#",
+    featured: true,
+  },
+
+  {
+    title: "Stock Trading Platform UI",
+    description:
+      "Built a responsive frontend inspired by Zerodha, focusing on clean UI and smooth navigation. Implemented multiple pages including landing, dashboard mockups, and pricing sections. Currently working on adding real-time data and backend functionality.",
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/mansi2004mehra18/StockTradingPlatform",
+    live: "#",
+    featured: false,
+  },
+
   // {
   //   title: "GitHub Clone",
   //   description:
@@ -40,24 +52,6 @@ const projects: Project[] = [
   //   live: "#",
   //   featured: true,
   // },
-  {
-    title: "Stock Trading Platform",
-    description:
-      "A pixel-perfect clone of Zerodha's trading platform interface. Features include a responsive landing page, pricing section, dashboard mockup, and smooth navigation across multiple pages.",
-    tech: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
-    github: "https://github.com/mansi2004mehra18/StockTradingPlatform",
-    live: "#",
-    featured: false,
-  },
-  {
-    title: "Blog Website",
-    description:
-      "A dynamic blog platform with user authentication, rich text editing, commenting system, and category filtering. Features a clean reading experience with markdown support.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/mansimehra/blog-website",
-    live: "#",
-    featured: false,
-  },
 ]
 
 function FeaturedProject({ project, index }: { project: Project; index: number }) {
@@ -80,15 +74,13 @@ function FeaturedProject({ project, index }: { project: Project; index: number }
   return (
     <div
       ref={ref}
-      className={`group relative grid items-center gap-4 md:grid-cols-12 transition-all duration-700 ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-      }`}
+      className={`group relative grid items-center gap-4 md:grid-cols-12 transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+        }`}
     >
       {/* Project image/visual placeholder */}
       <div
-        className={`relative overflow-hidden rounded-xl border border-border bg-secondary/50 md:col-span-7 ${
-          isEven ? "md:col-start-1" : "md:col-start-6"
-        }`}
+        className={`relative overflow-hidden rounded-xl border border-border bg-secondary/50 md:col-span-7 ${isEven ? "md:col-start-1" : "md:col-start-6"
+          }`}
       >
         <div className="flex aspect-video items-center justify-center bg-card transition-transform duration-300 group-hover:scale-[1.02]">
           <div className="text-center">
@@ -100,11 +92,10 @@ function FeaturedProject({ project, index }: { project: Project; index: number }
 
       {/* Project details */}
       <div
-        className={`relative z-10 md:col-span-6 ${
-          isEven
+        className={`relative z-10 md:col-span-6 ${isEven
             ? "md:col-start-7 md:text-right"
             : "md:col-start-1 md:row-start-1 md:text-left"
-        }`}
+          }`}
       >
         <p className="mb-1 font-mono text-xs text-primary">Featured Project</p>
         <h3 className="mb-4 text-xl font-bold text-foreground md:text-2xl">
@@ -116,9 +107,8 @@ function FeaturedProject({ project, index }: { project: Project; index: number }
           </p>
         </div>
         <div
-          className={`mt-4 flex flex-wrap gap-2 ${
-            isEven ? "md:justify-end" : "md:justify-start"
-          }`}
+          className={`mt-4 flex flex-wrap gap-2 ${isEven ? "md:justify-end" : "md:justify-start"
+            }`}
         >
           {project.tech.map((t) => (
             <span key={t} className="font-mono text-xs text-muted-foreground">
@@ -127,9 +117,8 @@ function FeaturedProject({ project, index }: { project: Project; index: number }
           ))}
         </div>
         <div
-          className={`mt-4 flex items-center gap-4 ${
-            isEven ? "md:justify-end" : "md:justify-start"
-          }`}
+          className={`mt-4 flex items-center gap-4 ${isEven ? "md:justify-end" : "md:justify-start"
+            }`}
         >
           {project.github && (
             <a
@@ -177,9 +166,8 @@ function OtherProject({ project, index }: { project: Project; index: number }) {
   return (
     <div
       ref={ref}
-      className={`group flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-      }`}
+      className={`group flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-500 hover:border-primary/50 hover:-translate-y-1 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+        }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       <div className="mb-5 flex items-center justify-between">
@@ -247,9 +235,8 @@ export function Projects() {
   return (
     <section ref={ref} id="projects" className="relative px-6 py-24 md:py-32">
       <div
-        className={`mx-auto max-w-6xl transition-all duration-700 ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-        }`}
+        className={`mx-auto max-w-6xl transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+          }`}
       >
         <div className="mb-4 flex items-center gap-3">
           <span className="font-mono text-sm text-primary">03.</span>

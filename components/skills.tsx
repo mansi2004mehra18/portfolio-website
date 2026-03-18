@@ -11,6 +11,7 @@ const skillCategories = [
       { name: "HTML5", icon: "H5" },
       { name: "CSS3", icon: "C3" },
       { name: "Tailwind CSS", icon: "TW" },
+      { name: "Bootstrap", icon: "BS" },
     ],
   },
   {

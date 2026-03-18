@@ -5,8 +5,8 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react"
 
 const roles = [
   "Full Stack Developer",
-  "AI Integration Engineer",
   "MERN Stack Developer",
+  "AI-Focused Developer",
 ]
 
 export function Hero() {
@@ -71,9 +71,9 @@ export function Hero() {
           </h2>
         </div>
         <p className="mx-auto mb-10 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          I build accessible, performant, and visually engaging web applications.
-          Specializing in full-stack development with a passion for integrating
-          AI into modern solutions.
+          I build real-world web applications with a focus on performance, usability, and impact.
+          Currently exploring the intersection of full-stack development and AI to solve practical problems.
+          Always learning, building, and aiming to turn ideas into scalable products.
         </p>
 
         <div className="mb-12 flex items-center justify-center gap-4">
@@ -93,7 +93,7 @@ export function Hero() {
 
         <div className="flex items-center justify-center gap-6">
           <a
-            href="https://github.com/mansimehra"
+            href="https://github.com/mansi2004mehra18"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
@@ -102,7 +102,7 @@ export function Hero() {
             <Github size={22} />
           </a>
           <a
-            href="https://linkedin.com/in/mansimehra"
+            href="https://www.linkedin.com/in/mansi-mehra-65325738a/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-primary"
@@ -111,7 +111,7 @@ export function Hero() {
             <Linkedin size={22} />
           </a>
           <a
-            href="mailto:mansi@example.com"
+            href="mailto:mansi2004mehra18@gmail.com"
             className="text-muted-foreground transition-colors hover:text-primary"
             aria-label="Email"
           >
