@@ -22,14 +22,19 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Learn More
 
-To learn more, take a look at the following resources:
+##Core Framework
+Next.js 16.1.5
+TypeScript (.tsx)
+React 19.x
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+##Styling & UI
+Tailwind CSS
+Radix UI / shadcn/ui
+Lucide React
 
-<a href="https://v0.app/chat/api/kiro/clone/mansi2004mehra18/portfolio-website" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+##Development Tools
+PostCSS
+ESLint
+Vercel
