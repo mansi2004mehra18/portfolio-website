@@ -1,15 +1,15 @@
-"use client";
+"use client"
 
-import { useEffect, useRef, useState } from "react";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { useEffect, useRef, useState } from "react"
+import { ExternalLink, Github, Folder } from "lucide-react"
 
 interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  github?: string;
-  live?: string;
-  featured: boolean;
+  title: string
+  description: string
+  tech: string[]
+  github?: string
+  live?: string
+  featured: boolean
 }
 
 const projects: Project[] = [
@@ -60,7 +60,7 @@ const projects: Project[] = [
   //   live: "#",
   //   featured: true,
   // },
-];
+]
 
 function FeaturedProject({
   project,
@@ -69,13 +69,13 @@ function FeaturedProject({
   project: Project;
   index: number;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setIsVisible(true);
+        if (entry.isIntersecting) setIsVisible(true)
       },
       { threshold: 0.2 },
     );
@@ -83,19 +83,17 @@ function FeaturedProject({
     return () => observer.disconnect();
   }, []);
 
-  const isEven = index % 2 === 0;
+  const isEven = index % 2 === 0
 
   return (
     <div
       ref={ref}
-      className={`group relative grid items-center gap-4 md:grid-cols-12 transition-all duration-700 ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+      className={`group relative grid items-center gap-4 md:grid-cols-12 transition-all duration-700 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
       }`}
     >
       {/* Project image/visual placeholder */}
       <div
-        className={`relative overflow-hidden rounded-xl border border-border bg-secondary/50 md:col-span-7 ${
-          isEven ? "md:col-start-1" : "md:col-start-6"
+        className={`relative overflow-hidden rounded-xl border border-border bg-secondary/50 md:col-span-7 ${isEven ? "md:col-start-1" : "md:col-start-6"
         }`}
       >
         <div className="flex aspect-video items-center justify-center bg-card transition-transform duration-300 group-hover:scale-[1.02]">
@@ -110,8 +108,7 @@ function FeaturedProject({
 
       {/* Project details */}
       <div
-        className={`relative z-10 md:col-span-6 ${
-          isEven
+        className={`relative z-10 md:col-span-6 ${isEven
             ? "md:col-start-7 md:text-right"
             : "md:col-start-1 md:row-start-1 md:text-left"
         }`}
@@ -126,8 +123,7 @@ function FeaturedProject({
           </p>
         </div>
         <div
-          className={`mt-4 flex flex-wrap gap-2 ${
-            isEven ? "md:justify-end" : "md:justify-start"
+          className={`mt-4 flex flex-wrap gap-2 ${isEven ? "md:justify-end" : "md:justify-start"
           }`}
         >
           {project.tech.map((t) => (
@@ -137,8 +133,7 @@ function FeaturedProject({
           ))}
         </div>
         <div
-          className={`mt-4 flex items-center gap-4 ${
-            isEven ? "md:justify-end" : "md:justify-start"
+          className={`mt-4 flex items-center gap-4 ${isEven ? "md:justify-end" : "md:justify-start"
           }`}
         >
           {project.github && (
