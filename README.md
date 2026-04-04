@@ -24,19 +24,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 
-##Core Framework
+## Core Framework
 
 Next.js 16.1.5
 TypeScript (.tsx)
 React 19.x
 
-##Styling & UI
+## Styling & UI
 
 Tailwind CSS
 Radix UI / shadcn/ui
 Lucide React
 
-##Development Tools
+## Development Tools
 
 PostCSS
 ESLint
